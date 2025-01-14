@@ -1,0 +1,15 @@
+Lógica de programação
+
+Prova Estrutura de repetição: FOR (2 tentativas)
+
+# Solicita ao usuário que insira um número entre 1 e 10
+numero = int(input("Digite um número inteiro entre 1 e 10 para ver a tabuada: "))
+
+# Verifica se o número está dentro do intervalo permitido
+if 1 <= numero <= 10:
+    print(f"\nTabuada de {numero}:")
+    for i in range(1, 11):  # Loop de 1 a 10
+        resultado = numero * i
+        print(f"{numero} X {i} = {resultado}")
+else:
+    print("Por favor, digite um número válido entre 1 e 10.")
