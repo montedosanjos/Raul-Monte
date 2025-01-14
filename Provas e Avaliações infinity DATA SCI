@@ -1,0 +1,97 @@
+Lógica de programação
+
+Prova Algoritmos e Variáveis (1)
+# Exemplo de diferentes tipagens de variáveis
+
+# 1 – Inteiro # Solicitação de dados ao usuário
+idade = int(input("Digite sua idade: "))  
+
+# 2 – Float # Solicitação de dados ao usuário
+altura = float(input("Digite sua altura em metros: "))  
+
+# 3 – String # Solicitação de dados ao usuário
+nome = input("Digite seu nome: ")  
+
+# 4 – Booleano # Verifica se a pessoa é maior de idade
+maior_de_idade = idade >= 18  
+
+# Mensagem personalizada com as informações coletadas
+
+print(f"E ai, {nome}! Você tem {idade} anos e sua altura é {altura:.2f} metros.")
+if maior_de_idade:
+    print("Você é maior de idade.")
+else:
+    print("Você é menor de idade.")
+
+Exercício complementar 1 Algoritmos e Variáveis
+
+Feito
+
+Prova Condicionais
+
+# Programa para verificar a velocidade do carro e calcular multa
+
+# Solicita ao usuário a velocidade do carro
+velocidade = float(input("Digite a velocidade do carro em km/h: "))
+
+# Verifica se a velocidade ultrapassa o limite
+if velocidade > 80: 	# Calcula o excesso de velocidade
+   excesso = velocidade – 80	 # Calcula o valor da multa
+    multa = excesso * 20	 # Exibe a mensagem de multa e o valor
+    print(f"Você foi multado! O valor da multa é R${multa:.2f}.")
+else:	  # Mensagem caso não haja multa
+    print("Você está dentro do limite de velocidade. Continue dirigindo com segurança!")
+
+
+Prova Looping: While
+
+# Inicializando variáveis
+soma = 0
+contador = 0
+
+while True:
+    # Lê um número inteiro do usuário
+    numero = int(input("Digite um número inteiro (0 para sair): "))
+    
+    # Verifica se o número é 0 para encerrar o loop
+    if numero == 0:
+        break
+    
+    # Atualiza a soma e o contador
+    soma += numero
+    contador += 1
+
+# Verifica se algum número foi digitado antes de calcular a média
+if contador > 0:
+    media = soma / contador
+    print(f"\nQuantidade de números digitados: {contador}")
+    print(f"Soma dos números: {soma}")
+    print(f"Média aritmética: {media:.2f}")
+else:
+    print("Nenhum número foi digitado.")
+
+
+# Inicializando variáveis
+soma = 0
+contador = 0
+
+while True:
+    # Lê um número inteiro do usuário
+    numero = int(input("Digite um número inteiro (0 para sair): "))
+    
+    # Verifica se o número é 0 para encerrar o loop
+    if numero == 0:
+        break
+    
+    # Atualiza a soma e o contador
+    soma += numero
+    contador += 1
+
+# Verifica se algum número foi digitado antes de calcular a média
+if contador > 0:
+    media = soma / contador
+    print(f"\nQuantidade de números digitados: {contador}")
+    print(f"Soma dos números: {soma}")
+    print(f"Média aritmética: {media:.2f}")
+else:
+    print("Nenhum número foi digitado.")
